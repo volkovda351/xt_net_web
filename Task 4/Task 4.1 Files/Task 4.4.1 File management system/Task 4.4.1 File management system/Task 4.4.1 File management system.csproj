@@ -45,7 +45,8 @@
   <ItemGroup>
     <Compile Include="CommandLine.cs" />
     <Compile Include="Commit.cs" />
-    <Compile Include="GitRequest.cs" />
+    <Compile Include="FileManagementSystem.cs" />
+    <Compile Include="Git.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Watcher.cs" />

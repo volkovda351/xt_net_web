@@ -10,7 +10,7 @@ namespace Task_4._4._1_File_management_system
 	{
 		static void Main(string[] args)
 		{
-			GitRequest.Init();
+			Git.Init();
 
 			while (true)
 			{
@@ -24,13 +24,15 @@ namespace Task_4._4._1_File_management_system
 				switch (choice)
 				{
 					case "1":
-						GitRequest.AddCommit();
-						Watcher.FileChanged += GitRequest.AddCommit;
+						Git.Add();
+						string currentTime = DateTime.Now.Ticks.ToString();
+						Git.Commit(currentTime);
+						Watcher.FileChanged += FileManagementSystem.AddCommit;
 						Watcher.Run();
 						break;
 					case "2":
 						Console.WriteLine("Enter a date in the format dd/MM/yyyy HH:mm:ss");
-						Console.WriteLine(GitRequest.ResetToDate(Console.ReadLine()));
+						Console.WriteLine(FileManagementSystem.Reset(Console.ReadLine()));
 						break;
 					case "3":
 						return;

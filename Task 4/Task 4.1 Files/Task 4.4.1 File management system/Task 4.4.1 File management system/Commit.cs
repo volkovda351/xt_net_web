@@ -8,9 +8,6 @@ namespace Task_4._4._1_File_management_system
 {
 	public class Commit
 	{
-		private string _hash;
-		private string _message;
-
 		public Commit(string commitInLine)
 		{
 			string[] partsOfCommit = commitInLine.Split(' ');
@@ -18,27 +15,7 @@ namespace Task_4._4._1_File_management_system
 			Message = partsOfCommit[1];
 		}
 
-		public string Hash
-		{
-			get
-			{
-				return _hash;
-			}
-			set
-			{
-				_hash = value;
-			}
-		}
-		public string Message
-		{
-			get
-			{
-				return _message;
-			}
-			set
-			{
-				_message = value;
-			}
-		}
+		public string Hash { get; set; }
+		public string Message { get; set; }
 	}
 }

@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 1.5;
+}
+.list {
+	width: 200px;
+	margin: 0 auto;
+	background: #fae498;
+	border: 1px solid #000000;
+	border-radius: 5%;
+	box-shadow: 5px 5px #890000;
+	color: #890000;
+}
+ul {
+	width: 190px;
+	margin: 0px;
+	padding: 10px;
+}
+li {
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+}

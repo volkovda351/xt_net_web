@@ -1,0 +1,33 @@
+body {
+	background: #333333;
+	color: #f9f9f9;
+	font-size: 16pt;
+}
+.container {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+.pointing {
+	background: #88b7d5;
+	border: 5px solid #c3e1f4;
+	width: 90%;
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.pointing:before, .pointing:after {
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: -35px;
+	border-bottom: 35px solid #c2e1f5;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+}
+.pointing:after {
+	border-bottom: 35px solid #88b7d5;
+	top: -30px;
+}
